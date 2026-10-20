@@ -1,0 +1,28 @@
+---
+//varias redes sociales
+import Social from './Social.astro';
+
+/* se usa de manera individual y solo uno
+const platform = "github";
+const username = "JuliaBosianek";
+const linkedIn = "LinkedIn";
+const linkedinUrl = "https://www.linkedin.com/"*/
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+    <Social platform="twitter" username="astrodotbuild" />
+    <Social platform="github" username="withastro" />
+    <Social platform="youtube" username="astrodotbuild" />
+
+<!-- se usa de manera individual
+  <p>¡Más información sobre mis proyectos en <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+  <p>Buscame en <a href={linkedinUrl}>{linkedIn}</a></p>-->
+</footer>
